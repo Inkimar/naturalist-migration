@@ -11,8 +11,5 @@ This project pulls down an image from dockerhub ( https://hub.docker.com/r/raqua
 The benefit comparing to your local installation of RStudio is that you do not have to install all the dependencies ( packages and sometimes system-libraries that may be neccisary)
 
 ## how to start.
-1. make
-2. make start-ui
-
-1. The makefile pulls down the 'raquamaps/mirroreum:v0' from dockerhub and runs it
-2. starts a browser (credentials are rstudio/rstudio)
+1. make (The makefile pulls down the 'raquamaps/mirroreum:v0' from dockerhub and runs it)
+2. make start-ui (starts a browser (credentials are rstudio/rstudio)
