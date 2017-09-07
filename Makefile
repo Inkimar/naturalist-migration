@@ -9,9 +9,6 @@ all: init webide
 init:
 	mkdir -p src shr/dynamic shr/static
 
-pull:
-	docker pull raquamaps/mirroreum:v0
-
 webide:
 	@echo "Running only the Web IDE for RStudio..."
 
@@ -22,9 +19,14 @@ webide:
 		-p 8787:8787 \
 		-v $(PWD)/src:/home/rstudio raquamaps/mirroreum:v0
 
-delete:
-	docker rm mirroreum
-
 start-ui:
 	xdg-open http://localhost:8787
+
+# pulls the image down from dockerhub
+pull:
+	docker pull raquamaps/mirroreum:v0
+
+# deletes the container mirroreum
+delete:
+	docker rm mirroreum
 
