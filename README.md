@@ -11,11 +11,21 @@ This project pulls down an image from dockerhub ( https://hub.docker.com/r/raqua
 The benefit comparing to your local installation of RStudio is that you do not have to install all the dependencies ( packages and sometimes system-libraries that may be neccisary)
 
 ## how to start RStudio
-1. make (The makefile pulls down the 'raquamaps/mirroreum:v0' from dockerhub and runs it)
-2. make start-ui (starts a browser (credentials are rstudio/rstudio)
+```
+$ make 
+```
+
+(The makefile pulls down the 'raquamaps/mirroreum:v0' from dockerhub and runs it)
+
 
 ## login (http://localhost:8787/)
-after you login RStudio will open, on the left-hand side you have the 'console'
+```
+$ make start-ui 
+```
+
+(starts a browser (credentials are rstudio/rstudio)
+After you login,  RStudio will open, on the left-hand side you will see the RStudio-console
+The below is the 'greeting message' from the RStudio-console
 
 ```
 R version 3.4.0 (2017-04-21) -- "You Stupid Darkness"
@@ -35,7 +45,7 @@ Type 'demo()' for some demos, 'help()' for on-line help, or
 Type 'q()' to quit R.
 ```
 
-Enter the following 2 lines of instructions 'library(devtools)' and 'install_github("dina-web/dinar", ref="dev")'
+**Enter** the following 2 lines of instructions 'library(devtools)' and 'install_github("dina-web/dinar", ref="dev")'
 
 ```
 > library(devtools)
