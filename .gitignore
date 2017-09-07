@@ -1,3 +1,6 @@
+#Specific for the project
+src/
+
 # History files
 .Rhistory
 .Rapp.history
