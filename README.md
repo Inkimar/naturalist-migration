@@ -18,7 +18,7 @@ $ make
 (The makefile pulls down the 'raquamaps/mirroreum:v0' from dockerhub and runs it)
 
 
-## login (http://localhost:8787/)
+## login to RStudio (http://localhost:8787/)
 ```
 $ make start-ui 
 ```
@@ -51,3 +51,7 @@ Type 'q()' to quit R.
 > library(devtools)
 > install_github("dina-web/dinar", ref="dev")
 ```
+
+## examine the script and edit
+https://github.com/DINA-Web/dinar/blob/dev/exec/media_migrate_examples.R
+
