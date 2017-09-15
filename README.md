@@ -23,7 +23,7 @@ $ make
 $ make start-ui 
 ```
 
-(starts a browser (credentials are rstudio/rstudio)
+starts a browser (credentials are are found in the Makefile)
 After you login,  RStudio will open, on the left-hand side you will see the RStudio-console
 The below is the 'greeting message' from the RStudio-console
 
